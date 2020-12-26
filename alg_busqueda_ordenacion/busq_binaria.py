@@ -4,9 +4,12 @@ import random
 def busq_binaria(lista, comienzo, final, objetivo, cont=0):
     cont += 1
     print(f'Buscando {objetivo} entre {lista[comienzo]} y {lista[final - 1]}')
+
     if comienzo > final:
         return False, cont
+
     medio = (comienzo + final) // 2
+
     if lista[medio] == objetivo:        
         return True, cont
     elif lista[medio] < objetivo:
