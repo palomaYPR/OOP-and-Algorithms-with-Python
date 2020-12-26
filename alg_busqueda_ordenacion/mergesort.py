@@ -2,7 +2,7 @@ import random
 
 
 def mergesort(lista):
-   if len(lista) > 1:
+    if len(lista) > 1:
        medio = len(lista) // 2
        izquierda = lista[:medio]
        derecha = lista[medio:]
@@ -23,12 +23,10 @@ def mergesort(lista):
                lista[k] = derecha[j]
                j += 1
            k += 1
-
        while i < len(izquierda):
             lista[k] = izquierda[i]
             i += 1
             k += 1
-
        while j < len(derecha):
             lista[k] = derecha[j]
             j += 1
